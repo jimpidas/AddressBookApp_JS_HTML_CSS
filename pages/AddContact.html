@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddressBookSystem</title>
+    <link rel="stylesheet" href="../css/AddContact.css">
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img id="image1" src="../assets/logo.png" alt="Logo">
+            <div>
+                <span class="book-text">Address</span><br>
+                <span class="book-text book">Book</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action="#"  onreset="resetForm()">
+            <div class="form-head">
+                Person Address Form
+                <img  class="cancelButton" id="image2" src="../assets/cancel.jpeg" alt="cancel">
+            </div>
+            
+                
+            
+            <div class="row-content">
+               
+                <input type="text" class="input" id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+               
+                <textarea id="address" name="Address" class="input" placeholder="" style="height: 100px;">
+                    </textarea>
+            </div>
+            <div class="row-content">
+                
+                <div>
+                    <select id="city" name="City">
+                        <option>select City</option>
+                        <option value='Nam'>Namrup</option>
+                        <option value='Dib'>Dibrugarh</option>
+                        <option value='Ghy'>Guwahati</option>
+                    </select>
+                    <select id="state" name="State">
+                        <option>Select State</option>
+                        <option value='Ass'>Assam</option>
+                        <option value='Nag'>Nagaland</option>
+                        <option value='Miz'>Mizoram</option>
+                    </select>
+                    <select id="zip" name="zip">
+                        <option>zipcode</option>
+                        <option value='786623'>786623</option>
+                        <option value='223421'>223421</option>
+                        <option value='674532'>674532</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-content">
+                <input type="tel" class="input" id="tel" name="tel"  required>
+            </div>
+            <div class="button-parent">
+                <div class="add-reset">
+                    <button class="button addButton" type="add">Add</button>
+                    <button type="reset" class="button resetButton">Reset</button>
+                </div>
+    </form>
+</div>
+</body>
+</html>
